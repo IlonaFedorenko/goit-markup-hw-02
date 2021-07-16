@@ -1,7 +1,74 @@
-.link:hover,
-.btn:hover {
+/* background for page */
+.body {
+  color: 212121;
+}
+.item {
+  background-color: rgba(47, 48, 58, 1);
+}
+.item-advantages,
+.item-works {
+  background-color: rgba(255, 255, 255, 1);
+}
+.item-team {
+  background-color: rgba(245, 244, 250, 1);
+}
+.page-footer {
+  background-color: rgba(47, 48, 58, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* header,footer-index.html-portfolio.html */
+.link-header:hover,
+.link-header:focus,
+.link-footer:hover,
+.link-footer:focus,
+.link-header-page:focus,
+.link-header-page:hover {
   color: rgba(33, 150, 243, 1);
 }
-.logo {
+.link-header {
+  color: rgba(117, 117, 117, 1);
+}
+.link-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+.link-header-page {
+  color: rgba(33, 33, 33, 1);
+}
+.logo-web {
   color: rgba(33, 150, 243, 1);
+}
+.logo-studio {
+  color: rgba(0, 0, 0, 1);
+}
+.logo-white {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* button,index.html-portfolio.html */
+.btn {
+  background-color: rgba(33, 150, 243, 1);
+  color: white;
+}
+.btn-portfolio:hover,
+.btn-portfolio :focus {
+  background-color: rgba(33, 150, 243, 1);
+  color: white;
+}
+
+/* removed markers */
+.list {
+  list-style: none;
+}
+
+/*main heading*/
+.title {
+  color: white;
+}
+/* colorof headings and paragraphs */
+.section-title {
+  color: rgba(117, 117, 117, 1);
+}
+.section {
+  color: rgba(33, 33, 33, 1);
 }
