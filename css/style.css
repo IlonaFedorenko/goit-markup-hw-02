@@ -1,20 +1,41 @@
+:root {
+  --primary-text-color: rgba(33, 33, 33, 1);
+  --accent-text: rgba(33, 150, 243, 1);
+  --background-color-white: rgba(255, 255, 255, 1);
+  --background-color-black: rgba(47, 48, 58, 1);
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --header-link-color: rgba(117, 117, 117, 1);
+  --white-color: white;
+  --logo-white: rgba(255, 255, 255, 1);
+  --logo-black: rgba(0, 0, 0, 1);
+  --button-color-portfolio: rgba(245, 244, 250, 1);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Roboto, sans-serif;
+}
 /* background for page */
-.body {
+body {
   color: 212121;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 .item {
-  background-color: rgba(47, 48, 58, 1);
+  background-color: var(--background-color-black);
 }
 .item-advantages,
 .item-works {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--background-color-white);
 }
 .item-team {
-  background-color: rgba(245, 244, 250, 1);
+  background-color: var(--button-color-portfolio);
 }
 .page-footer {
-  background-color: rgba(47, 48, 58, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: var(--background-color-black);
+  color: var(--logo-white);
 }
 
 /* header,footer-index.html-portfolio.html */
@@ -24,51 +45,137 @@
 .link-footer:focus,
 .link-header-page:focus,
 .link-header-page:hover {
-  color: rgba(33, 150, 243, 1);
+  color: var(--accent-text);
 }
 .link-header {
-  color: rgba(117, 117, 117, 1);
+  color: var(--header-link-color);
+  text-decoration: none;
 }
 .link-footer {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-link-color);
+  text-decoration: none;
 }
 .link-header-page {
-  color: rgba(33, 33, 33, 1);
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.link-header-page.current {
+  color: var(--accent-text);
 }
 .logo-web {
-  color: rgba(33, 150, 243, 1);
+  color: var(--accent-text);
 }
 .logo-studio {
-  color: rgba(0, 0, 0, 1);
+  color: var(--logo-black);
 }
 .logo-white {
-  color: rgba(255, 255, 255, 1);
+  color: var(--logo-white);
+}
+.logo {
+  text-decoration: none;
+  font-family: Raleway, cursive;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 /* button,index.html-portfolio.html */
 .btn {
-  background-color: rgba(33, 150, 243, 1);
-  color: white;
+  background-color: var(--accent-text);
+  color: var(--white-color);
+  border-color: var(--accent-text);
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.btn-portfolio {
+  background-color: var(--button-color-portfolio);
+  border-color: var(--button-color-portfolio);
 }
 .btn-portfolio:hover,
 .btn-portfolio :focus {
-  background-color: rgba(33, 150, 243, 1);
-  color: white;
+  background-color: var(--accent-text);
+  color: var(--white-color);
 }
 
 /* removed markers */
 .list {
   list-style: none;
+  letter-spacing: 0.02em;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  font-style: normal;
 }
 
 /*main heading*/
 .title {
-  color: white;
+  color: var(--white-color);
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
 }
-/* colorof headings and paragraphs */
+.title-second {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+/* color of headings and paragraphs */
 .section-title {
-  color: rgba(117, 117, 117, 1);
+  color: var(--header-link-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .section {
-  color: rgba(33, 33, 33, 1);
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.section-second {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.title-section {
+  color: var(--header-link-color);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.list-pages {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+}
+.list-paragraph {
+  color: var(--header-link-color);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.8;
+}
+/* decor box-shadow */
+.list-team {
+  background: var(--background-color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.list-benefits {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
